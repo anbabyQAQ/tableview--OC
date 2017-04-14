@@ -14,6 +14,10 @@
 		3C71B49A1EA06F4C00456C37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C71B4991EA06F4C00456C37 /* CoreGraphics.framework */; };
 		3C71B49C1EA06FA000456C37 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C71B49B1EA06FA000456C37 /* CoreFoundation.framework */; };
 		3C71B4A51EA0735500456C37 /* UIView+TYL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71B4A41EA0735500456C37 /* UIView+TYL.m */; };
+		3C71B4A91EA0962D00456C37 /* TYLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71B4A81EA0962D00456C37 /* TYLDataManager.m */; };
+		3C71B4AC1EA096CC00456C37 /* TYLUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71B4AB1EA096CC00456C37 /* TYLUserInfo.m */; };
+		3C71B4B01EA09C7800456C37 /* CardPortraitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71B4AF1EA09C7800456C37 /* CardPortraitCell.m */; };
+		3C71B4B21EA0A05F00456C37 /* 员工.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C71B4B11EA0A05F00456C37 /* 员工.png */; };
 		3C89EF0F1EA05B7A00845D5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89EF0E1EA05B7A00845D5D /* main.m */; };
 		3C89EF121EA05B7A00845D5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89EF111EA05B7A00845D5D /* AppDelegate.m */; };
 		3C89EF151EA05B7A00845D5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89EF141EA05B7A00845D5D /* ViewController.m */; };
@@ -57,6 +61,13 @@
 		3C71B4A31EA0735500456C37 /* UIView+TYL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYL.h"; sourceTree = "<group>"; };
 		3C71B4A41EA0735500456C37 /* UIView+TYL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYL.m"; sourceTree = "<group>"; };
 		3C71B4A61EA0754600456C37 /* TYLGlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYLGlobalMacro.h; sourceTree = "<group>"; };
+		3C71B4A71EA0962D00456C37 /* TYLDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYLDataManager.h; path = "tableview简化封装-OC/TYLDataManager.h"; sourceTree = SOURCE_ROOT; };
+		3C71B4A81EA0962D00456C37 /* TYLDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYLDataManager.m; path = "tableview简化封装-OC/TYLDataManager.m"; sourceTree = SOURCE_ROOT; };
+		3C71B4AA1EA096CC00456C37 /* TYLUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYLUserInfo.h; path = ../TYLUserInfo.h; sourceTree = "<group>"; };
+		3C71B4AB1EA096CC00456C37 /* TYLUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYLUserInfo.m; path = ../TYLUserInfo.m; sourceTree = "<group>"; };
+		3C71B4AE1EA09C7800456C37 /* CardPortraitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPortraitCell.h; sourceTree = "<group>"; };
+		3C71B4AF1EA09C7800456C37 /* CardPortraitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardPortraitCell.m; sourceTree = "<group>"; };
+		3C71B4B11EA0A05F00456C37 /* 员工.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "员工.png"; sourceTree = "<group>"; };
 		3C89EF0A1EA05B7A00845D5D /* tableview简化封装-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tableview简化封装-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C89EF0E1EA05B7A00845D5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C89EF101EA05B7A00845D5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +140,17 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		3C71B4AD1EA098DB00456C37 /* TYLDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3C71B4AA1EA096CC00456C37 /* TYLUserInfo.h */,
+				3C71B4AB1EA096CC00456C37 /* TYLUserInfo.m */,
+				3C71B4A71EA0962D00456C37 /* TYLDataManager.h */,
+				3C71B4A81EA0962D00456C37 /* TYLDataManager.m */,
+			);
+			path = TYLDataManager;
+			sourceTree = "<group>";
+		};
 		3C89EF011EA05B7A00845D5D = {
 			isa = PBXGroup;
 			children = (
@@ -154,11 +176,15 @@
 		3C89EF0C1EA05B7A00845D5D /* tableview简化封装-OC */ = {
 			isa = PBXGroup;
 			children = (
+				3C71B4AD1EA098DB00456C37 /* TYLDataManager */,
 				3C71B48E1EA06BB400456C37 /* Global */,
 				3C89EF101EA05B7A00845D5D /* AppDelegate.h */,
 				3C89EF111EA05B7A00845D5D /* AppDelegate.m */,
 				3C89EF131EA05B7A00845D5D /* ViewController.h */,
 				3C89EF141EA05B7A00845D5D /* ViewController.m */,
+				3C71B4AE1EA09C7800456C37 /* CardPortraitCell.h */,
+				3C71B4AF1EA09C7800456C37 /* CardPortraitCell.m */,
+				3C71B4B11EA0A05F00456C37 /* 员工.png */,
 				3C89EF161EA05B7A00845D5D /* Main.storyboard */,
 				3C89EF191EA05B7A00845D5D /* Assets.xcassets */,
 				3C89EF1B1EA05B7A00845D5D /* LaunchScreen.storyboard */,
@@ -329,6 +355,7 @@
 			files = (
 				3C89EF1D1EA05B7A00845D5D /* LaunchScreen.storyboard in Resources */,
 				3C89EF1A1EA05B7A00845D5D /* Assets.xcassets in Resources */,
+				3C71B4B21EA0A05F00456C37 /* 员工.png in Resources */,
 				3C89EF181EA05B7A00845D5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,8 +433,11 @@
 				3C89EF151EA05B7A00845D5D /* ViewController.m in Sources */,
 				3C71B4A51EA0735500456C37 /* UIView+TYL.m in Sources */,
 				3C71B4981EA06ECE00456C37 /* TYLCommonTableData.m in Sources */,
+				3C71B4AC1EA096CC00456C37 /* TYLUserInfo.m in Sources */,
 				3C89EF121EA05B7A00845D5D /* AppDelegate.m in Sources */,
+				3C71B4B01EA09C7800456C37 /* CardPortraitCell.m in Sources */,
 				3C89EF0F1EA05B7A00845D5D /* main.m in Sources */,
+				3C71B4A91EA0962D00456C37 /* TYLDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

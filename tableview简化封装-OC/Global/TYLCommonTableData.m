@@ -9,8 +9,8 @@
 #import "TYLCommonTableData.h"
 
 #define DefaultUIRowHeight  50.f
-#define DefaultUIHeaderHeight  44.f
-#define DefaultUIFooterHeight  44.f
+#define DefaultUIHeaderHeight  20.f
+#define DefaultUIFooterHeight  20.f
 
 
 @implementation TYLCommonTableSection
