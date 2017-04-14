@@ -24,4 +24,13 @@ blue:((float)(rgbValue & 0x0000FF))/255.0 \
 alpha:alphaValue]
 
 
+
+#define TYLKit_SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
 #endif /* TYLGlobalMacro_h */

@@ -119,29 +119,50 @@ static NSString *DefaultTableCell = @"UITableViewCell";
     return view;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    TYLCommonTableSection *tableSection = self.data[indexPath.section];
+    TYLCommonTableRow     *tableRow     = tableSection.rows[indexPath.row];
+    if (!tableRow.forbidSelect) {
+        UIViewController *vc = tableView.tyl_viewController;
+        NSString *actionName = tableRow.cellActionName;
+        if (actionName.length) {
+            SEL sel = NSSelectorFromString(actionName);
+            UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            TYLKit_SuppressPerformSelectorLeakWarning([vc performSelector:sel withObject:cell]);
+        }
+    }
+}
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    //这里的cell已经有了正确的bounds
+    //不在cellForRow的地方设置分割线是因为在ios7下，0.5像素的view利用autoResizeMask调整布局有问题，会导致显示不出来，ios6,ios8均正常。
+    //这个回调里调整分割线的位置
+    TYLCommonTableSection *tableSection = self.data[indexPath.section];
+    TYLCommonTableRow     *tableRow     = tableSection.rows[indexPath.row];
+    UIView *sep = [cell viewWithTag:SepViewTag];
+    CGFloat sepHeight = .5f;
+    CGFloat sepWidth;
+    if (tableRow.sepLeftEdge) {
+        sepWidth  = cell.tyl_width - tableRow.sepLeftEdge;
+    }else{
+        TYLCommonTableSection *section = self.data[indexPath.section];
+        if (indexPath.row == section.rows.count - 1) {
+            //最后一行
+            sepWidth = 0;
+        }else{
+            sepWidth = cell.tyl_width - self.defaultSeparatorLeftEdge;
+        }
+    }
+    sepWidth  = sepWidth > 0 ? sepWidth : 0;
+    sep.frame = CGRectMake(cell.tyl_width - sepWidth, cell.tyl_height - sepHeight, sepWidth ,sepHeight);
+}
+
+
+//抽出赋值便于操作
 - (void)refreshData:(TYLCommonTableRow *)rowData cell:(UITableViewCell *)cell{
     cell.textLabel.text = rowData.title;
     cell.detailTextLabel.text = rowData.detailTitle;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @end
