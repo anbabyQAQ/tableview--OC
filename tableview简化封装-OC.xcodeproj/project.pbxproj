@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C71B4911EA06C4C00456C37 /* TYLCommonTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71B4901EA06C4C00456C37 /* TYLCommonTableDelegate.m */; };
+		3C71B4931EA06C9A00456C37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C71B4921EA06C9A00456C37 /* UIKit.framework */; };
+		3C71B4951EA06CF200456C37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C71B4941EA06CF200456C37 /* Foundation.framework */; };
+		3C71B4981EA06ECE00456C37 /* TYLCommonTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71B4971EA06ECE00456C37 /* TYLCommonTableData.m */; };
+		3C71B49A1EA06F4C00456C37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C71B4991EA06F4C00456C37 /* CoreGraphics.framework */; };
+		3C71B49C1EA06FA000456C37 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C71B49B1EA06FA000456C37 /* CoreFoundation.framework */; };
+		3C71B4A51EA0735500456C37 /* UIView+TYL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71B4A41EA0735500456C37 /* UIView+TYL.m */; };
 		3C89EF0F1EA05B7A00845D5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89EF0E1EA05B7A00845D5D /* main.m */; };
 		3C89EF121EA05B7A00845D5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89EF111EA05B7A00845D5D /* AppDelegate.m */; };
 		3C89EF151EA05B7A00845D5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89EF141EA05B7A00845D5D /* ViewController.m */; };
@@ -15,6 +22,7 @@
 		3C89EF1D1EA05B7A00845D5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89EF1B1EA05B7A00845D5D /* LaunchScreen.storyboard */; };
 		3C89EF281EA05B7A00845D5D /* tableview_____OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89EF271EA05B7A00845D5D /* tableview_____OCTests.m */; };
 		3C89EF331EA05B7A00845D5D /* tableview_____OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89EF321EA05B7A00845D5D /* tableview_____OCUITests.m */; };
+		B12F1D029575041874AE7078 /* libPods-tableview简化封装-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E487E6F223E60361CB7831EE /* libPods-tableview简化封装-OC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02123B7523CE5E2F00B9E56D /* Pods-tableview简化封装-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableview简化封装-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-tableview简化封装-OC/Pods-tableview简化封装-OC.release.xcconfig"; sourceTree = "<group>"; };
+		242698480C315D429638EF84 /* Pods-tableview简化封装-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableview简化封装-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tableview简化封装-OC/Pods-tableview简化封装-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		3C71B48F1EA06C4C00456C37 /* TYLCommonTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLCommonTableDelegate.h; sourceTree = "<group>"; };
+		3C71B4901EA06C4C00456C37 /* TYLCommonTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLCommonTableDelegate.m; sourceTree = "<group>"; };
+		3C71B4921EA06C9A00456C37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C71B4941EA06CF200456C37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C71B4961EA06ECE00456C37 /* TYLCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLCommonTableData.h; sourceTree = "<group>"; };
+		3C71B4971EA06ECE00456C37 /* TYLCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLCommonTableData.m; sourceTree = "<group>"; };
+		3C71B4991EA06F4C00456C37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C71B49B1EA06FA000456C37 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3C71B4A11EA072C100456C37 /* TYLCommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLCommonTableViewCell.h; sourceTree = "<group>"; };
+		3C71B4A31EA0735500456C37 /* UIView+TYL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYL.h"; sourceTree = "<group>"; };
+		3C71B4A41EA0735500456C37 /* UIView+TYL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYL.m"; sourceTree = "<group>"; };
+		3C71B4A61EA0754600456C37 /* TYLGlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYLGlobalMacro.h; sourceTree = "<group>"; };
 		3C89EF0A1EA05B7A00845D5D /* tableview简化封装-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tableview简化封装-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C89EF0E1EA05B7A00845D5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C89EF101EA05B7A00845D5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +73,7 @@
 		3C89EF2E1EA05B7A00845D5D /* tableview简化封装-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tableview简化封装-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C89EF321EA05B7A00845D5D /* tableview_____OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "tableview_____OCUITests.m"; sourceTree = "<group>"; };
 		3C89EF341EA05B7A00845D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E487E6F223E60361CB7831EE /* libPods-tableview简化封装-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tableview简化封装-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C71B49C1EA06FA000456C37 /* CoreFoundation.framework in Frameworks */,
+				3C71B49A1EA06F4C00456C37 /* CoreGraphics.framework in Frameworks */,
+				3C71B4951EA06CF200456C37 /* Foundation.framework in Frameworks */,
+				3C71B4931EA06C9A00456C37 /* UIKit.framework in Frameworks */,
+				B12F1D029575041874AE7078 /* libPods-tableview简化封装-OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +106,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C71B48E1EA06BB400456C37 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				3C71B4A21EA0733A00456C37 /* Category */,
+				3C71B48F1EA06C4C00456C37 /* TYLCommonTableDelegate.h */,
+				3C71B4901EA06C4C00456C37 /* TYLCommonTableDelegate.m */,
+				3C71B4961EA06ECE00456C37 /* TYLCommonTableData.h */,
+				3C71B4971EA06ECE00456C37 /* TYLCommonTableData.m */,
+				3C71B4A11EA072C100456C37 /* TYLCommonTableViewCell.h */,
+				3C71B4A61EA0754600456C37 /* TYLGlobalMacro.h */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		3C71B4A21EA0733A00456C37 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3C71B4A31EA0735500456C37 /* UIView+TYL.h */,
+				3C71B4A41EA0735500456C37 /* UIView+TYL.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		3C89EF011EA05B7A00845D5D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +136,8 @@
 				3C89EF261EA05B7A00845D5D /* tableview简化封装-OCTests */,
 				3C89EF311EA05B7A00845D5D /* tableview简化封装-OCUITests */,
 				3C89EF0B1EA05B7A00845D5D /* Products */,
+				6AE63690525BE9C9548FE0F2 /* Pods */,
+				80AA50BBF6ABAD171865ACD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +154,7 @@
 		3C89EF0C1EA05B7A00845D5D /* tableview简化封装-OC */ = {
 			isa = PBXGroup;
 			children = (
+				3C71B48E1EA06BB400456C37 /* Global */,
 				3C89EF101EA05B7A00845D5D /* AppDelegate.h */,
 				3C89EF111EA05B7A00845D5D /* AppDelegate.m */,
 				3C89EF131EA05B7A00845D5D /* ViewController.h */,
@@ -140,6 +194,27 @@
 			path = "tableview简化封装-OCUITests";
 			sourceTree = "<group>";
 		};
+		6AE63690525BE9C9548FE0F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				242698480C315D429638EF84 /* Pods-tableview简化封装-OC.debug.xcconfig */,
+				02123B7523CE5E2F00B9E56D /* Pods-tableview简化封装-OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80AA50BBF6ABAD171865ACD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C71B49B1EA06FA000456C37 /* CoreFoundation.framework */,
+				3C71B4991EA06F4C00456C37 /* CoreGraphics.framework */,
+				3C71B4941EA06CF200456C37 /* Foundation.framework */,
+				3C71B4921EA06C9A00456C37 /* UIKit.framework */,
+				E487E6F223E60361CB7831EE /* libPods-tableview简化封装-OC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C89EF371EA05B7A00845D5D /* Build configuration list for PBXNativeTarget "tableview简化封装-OC" */;
 			buildPhases = (
+				23A98E5765B91448C83AF033 /* [CP] Check Pods Manifest.lock */,
 				3C89EF061EA05B7A00845D5D /* Sources */,
 				3C89EF071EA05B7A00845D5D /* Frameworks */,
 				3C89EF081EA05B7A00845D5D /* Resources */,
+				C3EE1224C471E7A4EE33E09E /* [CP] Embed Pods Frameworks */,
+				A345713A03B717B37213DB73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,12 +349,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23A98E5765B91448C83AF033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A345713A03B717B37213DB73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tableview简化封装-OC/Pods-tableview简化封装-OC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3EE1224C471E7A4EE33E09E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tableview简化封装-OC/Pods-tableview简化封装-OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3C89EF061EA05B7A00845D5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C71B4911EA06C4C00456C37 /* TYLCommonTableDelegate.m in Sources */,
 				3C89EF151EA05B7A00845D5D /* ViewController.m in Sources */,
+				3C71B4A51EA0735500456C37 /* UIView+TYL.m in Sources */,
+				3C71B4981EA06ECE00456C37 /* TYLCommonTableData.m in Sources */,
 				3C89EF121EA05B7A00845D5D /* AppDelegate.m in Sources */,
 				3C89EF0F1EA05B7A00845D5D /* main.m in Sources */,
 			);
@@ -425,6 +554,7 @@
 		};
 		3C89EF381EA05B7A00845D5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 242698480C315D429638EF84 /* Pods-tableview简化封装-OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 657HH87BMM;
@@ -437,6 +567,7 @@
 		};
 		3C89EF391EA05B7A00845D5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02123B7523CE5E2F00B9E56D /* Pods-tableview简化封装-OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 657HH87BMM;
@@ -516,6 +647,7 @@
 				3C89EF391EA05B7A00845D5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C89EF3A1EA05B7A00845D5D /* Build configuration list for PBXNativeTarget "tableview简化封装-OCTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +656,7 @@
 				3C89EF3C1EA05B7A00845D5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C89EF3D1EA05B7A00845D5D /* Build configuration list for PBXNativeTarget "tableview简化封装-OCUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +665,7 @@
 				3C89EF3F1EA05B7A00845D5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
